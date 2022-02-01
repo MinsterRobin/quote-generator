@@ -1,16 +1,62 @@
 import React, {useEffect, useState} from "react";
 import {ReactComponent as Renew} from "../assets/arrow_autorenew.svg";
+import {ReactComponent as ArrowRight} from "../assets/arrow_right.svg";
 import styled, {useTheme} from 'styled-components';
 import { Link } from "react-router-dom";
+import Quote from "../components/molecules/Quote";
+import Footer from "../components/organisms/Footer";
+import Separator from "../components/atoms/Separator";
+import {P} from "../components/atoms/Typography";
+
+const Layout = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 100vh;
+    max-width: 800px;
+    padding: var(--padding-size);
+`;
+
+const ContentLayout = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
 
 const RandomButton = styled.div`
-    display: inline-block;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    align-self: flex-end;
     
     svg {
         height: 16px;
         width: 16px;
     }
+`;
+
+const AuthorInfosLayout = styled.div`    
+    padding: 50px 39px 50px 29px;
+    color: ${props => props.theme.text};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    svg {
+        height: 12px;
+        width: 25px;
+    }
+    
+    &:hover {
+        color: ${props => props.theme.background};;
+        background-color: ${props => props.theme.primary};
+    }
+`;
+
+const TagsContainer = styled.div`
+    display: flex;
 `;
 
 const RandomQuoteView = () => {
@@ -40,19 +86,47 @@ const RandomQuoteView = () => {
         getRandomQuote()
     },[]);
 
-    return(
+    return (
+        <Layout>
+            <RandomButton onClick={getRandomQuote}>
+                <P size={"medium"} weight={"500"} family={"primary"}>random</P>
+                <Separator width={"11px"}/>
+                <Renew fill={theme.primary}/>
+            </RandomButton>
 
-        <div>
-            <RandomButton onClick={getRandomQuote}>random <Renew fill={theme.primary}/></RandomButton>
-            {loading && <div>A moment please ...</div>}
-            {error && <div>{'There is a problem fetching the post data' + error}</div>}
-            {data &&
-                <div>
-                    <div>{data.content}{data.author}</div>
-                    <Link to={"/" + data.author}>{data.author}</Link>
-                </div>
-            }
-        </div>
+            <ContentLayout>
+
+                {loading && <div>A moment please ...</div>}
+                {error && <div>{'There is a problem fetching the post data' + error}</div>}
+                {data &&
+                    <div>
+
+                        <Quote>{data.content}</Quote>
+
+                        <Separator height={"100px"}/>
+
+                        <Link to={"/" + data.author} style={{ textDecoration: 'none' }}>
+                            <AuthorInfosLayout>
+                                <div>
+                                    <P size={"large"} weight={"700"} family={"primary"}>{data.author}</P>
+                                    <Separator height={"8px"}/>
+                                    <TagsContainer>
+                                        {data.tags.map((tag, index) =>
+                                            <P size={"small"} weight={"500"} family={"primary"} color="#828282" key={index}>
+                                                {index !== data.tags.length - 1 ? tag + ", " : tag}
+                                            </P>
+                                        )}
+                                    </TagsContainer>
+                                </div>
+                                <ArrowRight fill={theme.background}/>
+                            </AuthorInfosLayout>
+                        </Link>
+
+                    </div>
+                }
+            </ContentLayout>
+            <Footer/>
+        </Layout>
     );
 };
 

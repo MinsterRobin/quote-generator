@@ -16,7 +16,7 @@ const THEMES = [
             regular: "1.6rem",
             medium: "1.8rem",
             large: "2.4rem",
-            very_large: "4.8rem"
+            very_large: "3.6rem"
         }
     }
 ];
