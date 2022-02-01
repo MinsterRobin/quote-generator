@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {ReactComponent as Renew} from "../assets/arrow_autorenew.svg";
 import {ReactComponent as ArrowRight} from "../assets/arrow_right.svg";
 import styled, {useTheme} from 'styled-components';
 import { Link } from "react-router-dom";
@@ -7,6 +6,7 @@ import Quote from "../components/molecules/Quote";
 import Footer from "../components/organisms/Footer";
 import Separator from "../components/atoms/Separator";
 import {P} from "../components/atoms/Typography";
+import RandomButton from "../components/molecules/RandomButton";
 
 const Layout = styled.div`
     display: flex;
@@ -23,18 +23,6 @@ const ContentLayout = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-`;
-
-const RandomButton = styled.div`
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    align-self: flex-end;
-    
-    svg {
-        height: 16px;
-        width: 16px;
-    }
 `;
 
 const AuthorInfosLayout = styled.div`    
@@ -88,16 +76,12 @@ const RandomQuoteView = () => {
 
     return (
         <Layout>
-            <RandomButton onClick={getRandomQuote}>
-                <P size={"medium"} weight={"500"} family={"primary"}>random</P>
-                <Separator width={"11px"}/>
-                <Renew fill={theme.primary}/>
-            </RandomButton>
+            <RandomButton onClick={getRandomQuote}/>
 
             <ContentLayout>
 
-                {loading && <div>A moment please ...</div>}
-                {error && <div>{'There is a problem fetching the post data' + error}</div>}
+                { loading && <P size={"large"} weight={"500"} family={"primary"}>A moment please...</P>}
+                { error && <P size={"large"} weight={"500"} family={"primary"}>{'There is a problem fetching the post data' + error}</P>}
                 {data &&
                     <div>
 

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e7bdec8-56d1-4343-87c2-46c5d4d20d6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Typography.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Quote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/RandomButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/arrow_right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/arrow_right.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Separator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Separator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AuthorQuotesView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AuthorQuotesView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RandomQuoteView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RandomQuoteView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/themes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/themes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <workItem from="1643301376088" duration="2961000" />
       <workItem from="1643380566383" duration="4710000" />
       <workItem from="1643640980225" duration="6953000" />
-      <workItem from="1643725113580" duration="5580000" />
+      <workItem from="1643725113580" duration="7673000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1643302788618</created>
@@ -116,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643649637782</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Functionnal and styled RandomQuoteView.js">
+      <created>1643737302606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643737302606</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,16 +129,22 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Functionnal fetch random quote" />
     <MESSAGE value="Functionnal non-styled version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functionnal non-styled version" />
+    <MESSAGE value="Functionnal and styled RandomQuoteView.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functionnal and styled RandomQuoteView.js" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="768" y="380" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1643737365331">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state x="768" y="380" key="#com.intellij.fileTypes.FileTypeChooser/-1920.243.1920.1080/0.0.2048.1152/2560.243.1920.1080@0.0.2048.1152" timestamp="1643737365331" />
     <state x="755" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1643302248608">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state x="755" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643302248608" />
-    <state x="607" y="171" key="CommitChangelistDialog2" timestamp="1643649636849">
+    <state x="607" y="171" key="CommitChangelistDialog2" timestamp="1643737301622">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
+    <state x="607" y="171" key="CommitChangelistDialog2/-1920.243.1920.1080/0.0.2048.1152/2560.243.1920.1080@0.0.2048.1152" timestamp="1643737301622" />
     <state x="607" y="171" key="CommitChangelistDialog2/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643649636849" />
     <state x="607" y="171" key="CommitChangelistDialog2/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643389358203" />
     <state width="2027" height="227" key="GridCell.Tab.0.bottom" timestamp="1643732501059">
@@ -222,9 +231,10 @@
     </state>
     <state width="2027" height="227" key="GridCell.Tab.3.right/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643652212067" />
     <state width="2027" height="227" key="GridCell.Tab.3.right/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643400007989" />
-    <state x="515" y="298" key="Vcs.Push.Dialog.v2" timestamp="1643649639457">
+    <state x="515" y="298" key="Vcs.Push.Dialog.v2" timestamp="1643737304161">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
+    <state x="515" y="298" key="Vcs.Push.Dialog.v2/-1920.243.1920.1080/0.0.2048.1152/2560.243.1920.1080@0.0.2048.1152" timestamp="1643737304161" />
     <state x="515" y="298" key="Vcs.Push.Dialog.v2/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643649639457" />
     <state x="515" y="298" key="Vcs.Push.Dialog.v2/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643389361053" />
   </component>
