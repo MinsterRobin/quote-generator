@@ -31,6 +31,7 @@ const AuthorInfosLayout = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .1s ease-in;
     
     svg {
         height: 12px;
@@ -38,6 +39,7 @@ const AuthorInfosLayout = styled.div`
     }
     
     &:hover {
+        transform: scale(1.05);
         color: ${props => props.theme.background};;
         background-color: ${props => props.theme.primary};
     }

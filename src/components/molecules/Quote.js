@@ -2,11 +2,15 @@ import React from "react";
 import styled, {useTheme} from "styled-components";
 import Hr from "../atoms/Hr";
 import {P} from "../atoms/Typography";
-import Separator from "../atoms/Separator";
 import PropTypes from 'prop-types';
 
 const Container = styled.div`
     display: flex;
+    gap: 99px;
+    
+    @media (max-width: 768px) {
+        gap: 39px;
+    }
 `;
 
 const Quote = ({children}) => {
@@ -15,8 +19,7 @@ const Quote = ({children}) => {
     return (
         <Container>
             <Hr color={theme.secondary} width={"8px"}/>
-            <Separator width={"99px"}/>
-            <P family={"primary"} weight={"500"} size={"very_large"}>{children}</P>
+            <P family={"primary"} weight={"500"} size={"very_large"} mobileSize={"large"}>{children}</P>
         </Container>
     );
 };

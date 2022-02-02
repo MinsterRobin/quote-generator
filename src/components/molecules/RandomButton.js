@@ -11,10 +11,31 @@ const Layout = styled.div`
     align-items: center;
     cursor: pointer;
     align-self: flex-end;
+    transition:  0.6s ease-out;
     
     svg {
+        transition:  0.6s ease-out; 
         height: 16px;
         width: 16px;
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+    &:active {
+        transition: .005s ease-in;
+        transform: scale(0.99);
+    }
+    
+    
+    &:hover svg {
+        transform: rotateZ(-720deg);
+    }
+    
+    &:active svg {
+        transition: .005s ease-in-out;
+        transform: rotateZ(360deg);
     }
 `;
 

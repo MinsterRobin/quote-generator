@@ -30,6 +30,10 @@ const RandomButtonContainer = styled.div`
 
 const AuthorNameContainer = styled.div`
     margin-left: 107px;
+    
+    @media (max-width: 768px) {
+        margin-left: 47px;
+    }
 `;
 
 const AuthorQuotesView = () => {
@@ -79,6 +83,7 @@ const AuthorQuotesView = () => {
                 { authorQuotes && <div>
 
                     <AuthorNameContainer>
+                        <Separator maxWidth={"107px"} width={"100%"} minWidth={"47px"} />
                         <P size={"very_large"} weight={"700"} family={"primary"}>{params.author}</P>
                     </AuthorNameContainer>
 
