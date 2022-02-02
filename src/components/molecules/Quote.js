@@ -19,7 +19,7 @@ const Quote = ({children}) => {
     return (
         <Container>
             <Hr color={theme.secondary} width={"8px"}/>
-            <P family={"primary"} weight={"500"} size={"very_large"} mobileSize={"large"}>{children}</P>
+            <P family={"primary"} weight={"500"} size={"very_large"} mobileSize={"large"}>&quot;{children}&quot;</P>
         </Container>
     );
 };

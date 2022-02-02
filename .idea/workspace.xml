@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e7bdec8-56d1-4343-87c2-46c5d4d20d6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Quote.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1643380566383" duration="4710000" />
       <workItem from="1643640980225" duration="6953000" />
       <workItem from="1643725113580" duration="7718000" />
-      <workItem from="1643819459750" duration="2678000" />
+      <workItem from="1643819459750" duration="3023000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1643302788618</created>
@@ -139,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643821591991</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="+ eslintrc.json config file">
+      <created>1643822164202</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643822164202</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +160,8 @@
     <MESSAGE value="Functionnal and styled AuthorQuotesView.js&#10;Not mobile functionnal" />
     <MESSAGE value="+ animations RandomButton.js, Author Button&#10;+ mobile responsivity" />
     <MESSAGE value="- FetchTest.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="- FetchTest.js" />
+    <MESSAGE value="+ eslintrc.json config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ eslintrc.json config file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643821865548">
@@ -168,11 +176,11 @@
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state x="755" y="324" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643302248608" />
-    <state x="607" y="171" key="CommitChangelistDialog2" timestamp="1643821591501">
+    <state x="607" y="171" key="CommitChangelistDialog2" timestamp="1643822163801">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state x="607" y="171" key="CommitChangelistDialog2/-1920.243.1920.1080/0.0.2048.1152/2560.243.1920.1080@0.0.2048.1152" timestamp="1643739392613" />
-    <state x="607" y="171" key="CommitChangelistDialog2/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643821591501" />
+    <state x="607" y="171" key="CommitChangelistDialog2/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643822163801" />
     <state x="607" y="171" key="CommitChangelistDialog2/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643389358203" />
     <state width="2027" height="318" key="GridCell.Tab.0.bottom" timestamp="1643821879484">
       <screen x="0" y="0" width="2048" height="1152" />
@@ -270,11 +278,11 @@
     <state width="2027" height="223" key="GridCell.Tab.3.right/-1920.243.1920.1080/0.0.2048.1152/2560.243.1920.1080@0.0.2048.1152" timestamp="1643739401694" />
     <state width="2027" height="223" key="GridCell.Tab.3.right/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643821846931" />
     <state width="2027" height="227" key="GridCell.Tab.3.right/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643400007989" />
-    <state x="515" y="298" key="Vcs.Push.Dialog.v2" timestamp="1643821593493">
+    <state x="515" y="298" key="Vcs.Push.Dialog.v2" timestamp="1643822165536">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state x="515" y="298" key="Vcs.Push.Dialog.v2/-1920.243.1920.1080/0.0.2048.1152/2560.243.1920.1080@0.0.2048.1152" timestamp="1643739394304" />
-    <state x="515" y="298" key="Vcs.Push.Dialog.v2/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643821593493" />
+    <state x="515" y="298" key="Vcs.Push.Dialog.v2/-1920.243.1920.1080/2560.243.1920.1080/0.0.2048.1152@0.0.2048.1152" timestamp="1643822165536" />
     <state x="515" y="298" key="Vcs.Push.Dialog.v2/0.0.2048.1152/-1920.243.1920.1080/2560.243.1920.1080@0.0.2048.1152" timestamp="1643389361053" />
   </component>
 </project>
